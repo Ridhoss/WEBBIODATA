@@ -179,3 +179,8 @@ a:hover {
 .footer .border-highlight {
   border-top: 1px solid var(--primary-color-highlight);
 }
+
+
+.text-muted {
+  color: #fff !important;
+}
