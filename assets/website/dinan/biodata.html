@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Biodata - Dinaandkh</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <h1><span>@dinaandkh</span></h1>
+                <ul>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p><span>Junior Web Developer</span></p>
+                <h1>Hi! its <span>Dinanda</span><br> Khayra Hutama</h1>
+            </div>
+        </div>
+    </div>
+
+<!-- Ini Section About -->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/fotoDiri.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Saya adalah seorang mahasiswa Jurusan Teknik Komputer dan Informatika (JTK) program studi D3 Teknik Informatika, Politeknik Negeri Bandung. Sebagai seorang Junior Web Developer, saya memiliki antusias tinggi untuk terus berkembang dalam dunia pengembangan web. Dengan komitmen yang kuat saya siap mempelajari dan menguasai berbagai teknologi baru demi memberikan kontribusi besar dalam perkembangan teknologi yang akan datang.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('biodata')">Biodata</p>
+                        <p class="tab-links" onclick="opentab('pendidikan')">Pendidikan</p>
+                        <p class="tab-links" onclick="opentab('skill')">Skill</p>
+                    </div>
+                    <div class="tab-contents active-tab" id='biodata'>
+                        <ul>
+                            <li><span>Nama Lengkap</span><br>Dinanda Khayra Hutama</li>
+                            <li><span>Nama Panggilan</span><br>Dinan, Nan</li>
+                            <li><span>NIM</span><br>241511041</li>
+                            <li><span>Jurusan</span><br>Jurusan Teknik Komputer dan Informatika</li>
+                            <li><span>Program Studi</span><br>D3 Teknik Informatika</li>
+                            <li><span>Nomor Telepon</span><br>081224128423</li>
+                            <li><span>Alamat Email</span><br>dinanda.kh@gmail.com</li>
+                            <li><span>Alamat Tinggal</span><br>Jl. Cisaranten Kulon no. 107 RT 4 RW 7, Kec. Arcamanik, Kota Bandung</li>
+                            <li><span>Hobi</span><br>Basket, Travelling, Bermain Games</li>
+                            <li><span>Motto</span><br>"Don't Lose, Just Win or Learn"</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id='pendidikan'>
+                        <ul>
+                            <li><span>2012 - 2018</span><br>SD Negeri 244 Guruminda</li>
+                            <li><span>2018 - 2021</span><br>SMP Plus Al-Ghifari</li>
+                            <li><span>2021 - 2024</span><br>SMK Negeri 13 Bandung (Rekayasa Perangkat Lunak)</li>
+                            <li><span>2024 - Sekarang</span><br>Politeknik Negeri Bandung (D3 Teknik Informatika)</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id='skill'>
+                        <ul>
+                            <li><span>UI/UX</span><br>Designer Web/App interfaces</li>
+                            <li><span>Web Development</span><br>Designer Web Development</li>
+                            <li><span>Wordpress Development</span><br>Designer Wordpress Web Development</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<!-- Ini Section Contact -->
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>dinanda.kh@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i>081224128423</p>
+                <div class="social-icons">
+                    <a href="https://facebook.com/"><i class="fab fa-facebook"></i></a>
+                    <a href="https://x.com/"><i class="fab fa-twitter-square"></i></a>
+                    <a href="https://instagram.com/"><i class="fab fa-instagram"></i></a>
+                    <a href="https://linkedin.com/"><i class="fab fa-linkedin"></i></a>
+                </div>
+                <a href="images/my-cv.pdf" download class="btn btn2">My Curriculum Vitae</a>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Masukkan Nama" required>
+                    <input type="email" name="email" placeholder="Masukkan email">
+                    <textarea name="message" rows="6" placeholder="Masukkan Pesan"></textarea>
+                    <button type="submit" class="btn-kirim">Kirim</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://kit.fontawesome.com/b0cc1e640c.js" crossorigin="anonymous"></script>
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link")
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,187 @@
+/* Reset styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', 'Segoe UI Emoji', 'Noto Color Emoji', sans-serif;
+    background-color: #fbddef; /* Soft pink background */
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+.container {
+    width: 100%;
+    max-width: 700px;
+    padding: 30px;
+    background-color: #ffffff;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    text-align: center;
+    border: 5px solid #faebaf; /* Soft yellow border */
+    position: relative;
+    overflow: hidden;
+}
+
+
+/* .container::before {
+    top: 20px;
+    left: 15px;
+    color: #f3a1ad;
+} */
+
+.container::after {
+    bottom: 20px;
+    right: 15px;
+    color: #aedeec;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(-10px);
+    }
+    50% {
+        transform: translateY(10px);
+    }
+}
+
+/* Social Media Links */
+.social-media a {
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 1.2em;
+    color: #ff6b81;
+    transition: color 0.3s ease;
+}
+
+.social-media a:hover {
+    color: #f1929b;
+    transform: scale(1.1);
+}
+
+/* Header Section */
+.header {
+    margin-bottom: 20px;
+}
+
+.profile-photo {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #a5d8ff; /* Soft blue border */
+    margin-bottom: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 2em;
+    color: #ff6b81; /* Soft pink */
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.role {
+    font-size: 1em;
+    color: #f1929b; /* Soft blue */
+    font-style: italic;
+    margin-bottom: 15px;
+}
+
+/* Section Titles */
+.section h2 {
+    color: #ffeb99; /* Soft yellow */
+    font-size: 1.6em;
+    margin-top: 20px;
+    padding-bottom: 5px;
+    border-bottom: 2px dashed #f3a1ad; /* Soft pink dashed line */
+    display: inline-block;
+}
+
+/* Info Section */
+.info {
+    margin-top: 10px;
+    font-size: 1em;
+    color: #666;
+}
+
+.info p {
+    margin: 5px 0;
+}
+
+/* Education and Skills Section */
+ul {
+    list-style-type: none;
+    margin: 15px 0;
+    padding: 0;
+    text-align: left;
+    font-size: 1em;
+    line-height: 1.6;
+    color: #555;
+}
+
+li {
+    margin-bottom: 10px;
+    background-color: #e1f5fe; /* Soft blue background for list items */
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+}
+
+li:hover {
+    transform: scale(1.05);
+}
+
+strong {
+    color: #ff6b81; /* Soft pink */
+}
+
+/* Tentang Saya */
+#tentang-saya p {
+    font-size: 1em;
+    color: #666;
+    line-height: 1.6;
+    background-color: #fff7e6;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+/* Bagian Tambahan */
+
+/* Hobi dan Minat */
+#hobi-minat ul {
+    background-color: #fff0f5; /* Soft pinkish background */
+}
+
+#hobi-minat ul li {
+    background-color: #e1f5fe; /* Soft blue */
+}
+
+/* Motto Hidup */
+#motto-hidup p {
+    font-size: 1.1em;
+    color: #666;
+    font-style: italic;
+    background-color: #fff7e6;
+    padding: 10px 15px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.05);
+    margin-top: 10px;
+}
+
+/* Pengalaman Organisasi */
+#pengalaman-organisasi ul {
+    background-color: #fff0f5; /* Soft pinkish background */
+}
+
+#pengalaman-organisasi ul li {
+    background-color: #e1f5fe; /* Soft blue */
+}
