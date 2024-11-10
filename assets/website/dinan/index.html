@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+o<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -10,12 +10,14 @@
     <div id="header">
         <div class="container">
             <nav>
-                <h1><span>@dinaandkh</span></h1>
-                <ul>
+                <h1><span>DINAANDKH</span></h1>
+                <ul id="sidemenu">
                     <li><a href="#header">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-solid fa-xmark" onclick="closemenu()"></i>
                 </ul>
+                <i class="fas fa-solid fa-bars" onclick="openmenu()"></i>
             </nav>
             <div class="header-text">
                 <p><span>Junior Web Developer</span></p>
@@ -103,7 +105,12 @@
             </div>
         </div>
     </div>
+    <div class="copyright">
+        <p>&copy; 2024 Dinanda Khayra Hutama. All rights reserved.</p
+    </div>
 </div>
+
+
 
 <script src="https://kit.fontawesome.com/b0cc1e640c.js" crossorigin="anonymous"></script>
 <script>
@@ -121,6 +128,18 @@
     }
 </script>
 
+<script>
+
+    var sidemeu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemeu.style.right = "0";
+    }
+    function closemenu(){
+        sidemeu.style.right = "-150";
+    }
+
+</script>
 
 </body>
 </html>

@@ -11,20 +11,25 @@
 			href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
 			rel="stylesheet"
 		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+		/>
 	</head>
 	<body>
+		<!-- NAV  -->
 		<header>
 			<a href="#" class="logo">Raihana</a>
 			<nav>
-				<a href="#" class="active">Home</a>
-				<a href="#skill-section">Skills</a>
+				<a href="#home">Home</a>
+				<a href="#skill-section"">Skills</a>
 				<a href="#education">Education</a>
-				<a href="#">Experience</a>
+				<a href="#experience">Experience</a>
 			</nav>
 		</header>
 
 		<!-- HEADER  -->
-		<section class="home">
+		<section class="home" id="home">
 			<div class="home-img">
 				<img src="asset/sasa.png" alt="Profile Picture" />
 			</div>
@@ -44,42 +49,109 @@
 					tinggal di Kota Bandung. Lebih tepatnya di Jln. Satria Raya komplek
 					Cibolerang, Caringin, Bandung.
 				</p>
+				<div class="social-icons">
+					<a href="https://www.linkedin.com/in/raihana-aisha-az-zahra/"
+						><i class="fa-brands fa-linkedin"></i
+					></a>
+					<a href="https://github.com/raihanaiooo"
+						><i class="fa-brands fa-github"></i
+					></a>
+					<a href="https://wa.me/6282130308398"
+						><i class="fa-brands fa-whatsapp"></i
+					></a>
+					<a
+						href="https://mail.google.com/mail/u/0/?view=cm&tf=1&fs=1&to=raihana.aisha.tif24@polban.ac.id"
+						><i class="fa fa-envelope"></i
+					></a>
+				</div>
 			</div>
 		</section>
 
 		<!-- SKILL  -->
-		<section>
+		<section id="skill-section">
 			<div class="container">
-				<div class="skill-header" id="skill-section">
-					<h1 style="font-size: 3rem">Skills</h1>
+				<div class="skill-header">
+					<h1 style="font-size: 4rem">Skills</h1>
 				</div>
 				<div class="card-wrapper" id="card-wrapper"></div>
 			</div>
 		</section>
 
 		<!-- EDUCATION  -->
-		<section class="education" id="education">
-			<h2 class="section-title" style="color: white">Pendidikan</h2>
-			<div class="education-list">
-				<div class="education-item">
-					<div class="education-card">
-						<h3>Universitas ABC</h3>
-						<p><strong>Gelar:</strong> Sarjana Komputer</p>
-						<p><strong>Tahun:</strong> 2020 - 2024</p>
-						<p>Fokus pada pengembangan perangkat lunak dan analisis data.</p>
+		<section class="education-section" id="education">
+			<div class="education-header">
+				<h1>Education</h1>
+			</div>
+			<div class="timeline">
+				<div class="timeline-item">
+					<div class="timeline-item-content">
+						<h3>Politeknik Negeri Bandung</h3>
+						<p>Teknik Komputer (2024)</p>
 					</div>
 				</div>
-				<div class="education-item">
-					<div class="education-card">
-						<h3>SMA XYZ</h3>
-						<p><strong>Jurusan:</strong> IPA</p>
-						<p><strong>Tahun:</strong> 2017 - 2020</p>
-						<p>Mempelajari dasar-dasar matematika, fisika, dan kimia.</p>
+				<div class="timeline-item">
+					<div class="timeline-item-content">
+						<h3>SMK Negeri 4 Bandung</h3>
+						<p>Rekayasa Perangkat Lunak (2021 - 2024)</p>
+					</div>
+				</div>
+				<div class="timeline-item">
+					<div class="timeline-item-content">
+						<h3>SMP Negeri 1 Tasikmalaya</h3>
+						<p>(2018 - 2021)</p>
 					</div>
 				</div>
 			</div>
 		</section>
 
+		<!-- EXPERIENCE -->
+		<section class="experience-section" id="experience">
+			<div class="experience-header">
+				<h1>Experience</h1>
+			</div>
+			<div class="carousel-container">
+				<span class="carousel-btn left" id="prevBtn">&#10094;</span>
+				<div class="carousel" id="carousel">
+					<div class="carousel-item">
+						<a href="https://jagooit.com/">
+							<img src="asset/jagooit.jpg" alt="" />
+						</a>
+						<h3>PT. JagooIT</h3>
+						<p>Backend Developer (Intern - 2023)</p>
+					</div>
+					<div class="carousel-item">
+						<a href="https://www.curaweda.com/">
+							<img src="asset/curaweda.png" alt="" />
+						</a>
+						<h3>PT. Curaweda Palagan Simbiotech</h3>
+						<p>Backend Developer (Intern 2023)</p>
+					</div>
+					<div class="carousel-item">
+						<a href="https://www.sintech.co.id/">
+							<img src="asset/sintek.jpg" alt="" />
+						</a>
+						<h3>PT. Sinergi Inovasi Tekno</h3>
+						<p>Laravel Developer (Intern - 2023)</p>
+					</div>
+					<div class="carousel-item">
+						<a href="https://dti.itb.ac.id/">
+							<img src="asset/itb.png" alt="" />
+						</a>
+						<h3>DTI ITB</h3>
+						<p>Backend Developer, Team Leader (Intern - 2024)</p>
+					</div>
+				</div>
+				<span class="carousel-btn right" id="nextBtn">&#10095;</span>
+			</div>
+		</section>
+
+		<!-- FOOTER  -->
+		<footer>
+			<div class="footer-wrapper">
+				<h3>©️Copyright 2024</h3>
+				<h3>R&D</h3>
+			</div>
+		</footer>
 		<!-- JAVASCRIPT  -->
 		<script>
 			const skills = [
@@ -90,7 +162,7 @@
 				{ name: "Clickup", img: "asset/clickup.png" },
 				{ name: "Word", img: "asset/word.jpg" },
 				{ name: "PHP", img: "asset/php.png" },
-				{ name: "Clickup", img: "asset/clickup.png" },
+				{ name: "SDLC", img: "asset/sdlc.png" },
 			];
 
 			const cardWrapper = document.getElementById("card-wrapper");
@@ -109,6 +181,96 @@
 			}
 			skills.forEach((skill) => {
 				cardWrapper.innerHTML += createCard(skill);
+			});
+
+			const carousel = document.getElementById("carousel");
+			const prevBtn = document.getElementById("prevBtn");
+			const nextBtn = document.getElementById("nextBtn");
+
+			let currentIndex = 0;
+			let items = document.querySelectorAll(".carousel-item");
+			const totalItems = items.length;
+
+			function duplicateItems() {
+				items.forEach((item) => {
+					const cloneFirst = item.cloneNode(true);
+					const cloneLast = item.cloneNode(true);
+					carousel.appendChild(cloneFirst);
+					carousel.insertBefore(cloneLast, items[0]);
+				});
+			}
+
+			duplicateItems();
+			items = document.querySelectorAll(".carousel-item");
+			carousel.style.transform = `translateX(-${currentIndex * 270}px)`;
+
+			function showSlide(index) {
+				carousel.style.transition = "transform 0.5s ease";
+				carousel.style.transform = `translateX(-${index * 270}px)`;
+			}
+
+			function resetPosition() {
+				if (currentIndex >= totalItems) {
+					currentIndex = 0;
+					carousel.style.transition = "none";
+					carousel.style.transform = `translateX(-${currentIndex * 270}px)`;
+					setTimeout(
+						() => (carousel.style.transition = "transform 0.5s ease"),
+						50
+					);
+				} else if (currentIndex < 0) {
+					currentIndex = totalItems - 1;
+					carousel.style.transition = "none";
+					carousel.style.transform = `translateX(-${currentIndex * 270}px)`;
+					setTimeout(
+						() => (carousel.style.transition = "transform 0.5s ease"),
+						50
+					);
+				}
+			}
+
+			function nextSlide() {
+				currentIndex++;
+				showSlide(currentIndex);
+			}
+
+			function prevSlide() {
+				currentIndex--;
+				showSlide(currentIndex);
+			}
+
+			carousel.addEventListener("transitionend", resetPosition);
+
+			nextBtn.addEventListener("click", nextSlide);
+			prevBtn.addEventListener("click", prevSlide);
+		</script>
+
+		<script>
+			window.addEventListener('DOMContentLoaded', () => {
+				const home = document.querySelector('nav a[href="#home"]');
+				const navbtn = document.querySelectorAll('nav a');
+
+				if (!window.location.hash) {
+					home.classList.add('active');
+				}
+
+				window.addEventListener('scroll', () => {
+					let currentSection = '';
+					document.querySelectorAll('section').forEach(section => {
+						const sectionTop = section.offsetTop;
+						const sectionHeight = section.clientHeight;
+						if (pageYOffset >= sectionTop - sectionHeight / 3) {
+							currentSection = section.getAttribute('id');
+						}
+					});
+
+					navbtn.forEach(a => {
+						a.classList.remove('active');
+						if (a.getAttribute('href') === `#${currentSection}`) {
+							a.classList.add('active');
+						}
+					});
+				});
 			});
 		</script>
 	</body>

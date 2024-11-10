@@ -10,6 +10,7 @@
   margin: 0;
   text-decoration: none;
   font-family: var(--body-font-family);
+  scroll-behavior: smooth;
 }
 
 header {
@@ -17,13 +18,38 @@ header {
   height: 7vh;
   background-color: var(--primary-color);
   display: flex;
-  justify-content: start;
+  justify-content: space-between;
   align-items: center;
   padding: 0 2rem;
   position: fixed;
 }
 
-header a {
+.bionav {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-right: 4rem;
+}
+
+.bionav a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 2px;
+  transition: 0.2s;
+}
+
+.bionav a:hover {
+  color: #ffb703;
+}
+
+.bionav a.active {
+  color: #ffb703;
+  border-bottom: 3px solid #ffb703;
+}
+
+.headlogo a {
   text-decoration: none;
   color: #fff;
   font-size: 1.6rem;
@@ -240,6 +266,10 @@ footer {
       object-fit: cover;
       margin-bottom: 10px;
       border-radius: 10px;
+  }
+
+  .bionav a {
+    display: none;
   }
 
 }
